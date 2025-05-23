@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo"></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Summer Fits</a>
+            </nav>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+        <option value="All">All</option>
+        <option value="Tops">Tops</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Dresses">Dresses</option>
+        <option value="Shirt">Shirt</option>
+        <option value="TShirt">TShirt</option>
+        <option value="Skirts">Skirts</option>
+        <option value="Shorts">Shorts</option>
+        <option value="Jumpsuit">Jumpsuit</option>
+      </select>
+            <input type="text" class="search-input" placeholder="Search" />
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-item" onclick="openProfile()">
+                <i class="fa-solid fa-user"></i><span> Profile</span>
+            </div>
+            <div class="nav-item" onclick="openWishlist()">
+                <i class="fa-solid fa-heart"></i><span> Wishlist</span>
+            </div>
+
+            <div class="nav-item" onclick="openCart()">
+                <i class="fa-solid fa-bag-shopping"></i><span> Bag</span>
+            </div>
+        </div>
+    </header>
+    </header>
+    <div class="shop-sec">
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Bodycon Dress" data-price="2897"></i>
+            <h3>Bodycon Dress</h3>
+            <div class="box-img" style="background-image: url('img_1.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.2897</p>
+                <button class="add-to-cart-btn" data-name="Bodycon Dress" data-price="2897">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Yellow top" data-price="1200"></i>
+            <h3>Yellow top</h3>
+            <div class="box-img" style="background-image: url('img_2.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1200</p>
+                <button class="add-to-cart-btn" data-name="Yellow top" data-price="1200">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Blue Jeans" data-price="2000"></i>
+            <h3>Blue Jeans</h3>
+            <div class="box-img" style="background-image: url('img_3.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.2000</p>
+                <button class="add-to-cart-btn" data-name="Blue Jeans" data-price="2000">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Loosefit Jumpsuit" data-price="1995"></i>
+            <h3>Loosefit Jumpsuit</h3>
+            <div class="box-img" style="background-image: url('img_4.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1995</p>
+                <button class="add-to-cart-btn" data-name="Loosefit Jumpsuit" data-price="1995">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Brown long Skirt" data-price="980"></i>
+            <h3>Olive long Skirt</h3>
+            <div class="box-img" style="background-image: url('img_5.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.980</p>
+                <button class="add-to-cart-btn" data-name="Brown long Skirt" data-price="980">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Basic Tee" data-price="506"></i>
+            <h3>Basic Tee</h3>
+            <div class="box-img" style="background-image: url('img_6.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.506</p>
+                <button class="add-to-cart-btn" data-name="Basic Tee" data-price="506">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Maroorn Coord set" data-price="1107"></i>
+            <h3>Maroorn Coord set</h3>
+            <div class="box-img" style="background-image: url('img_7.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1107</p>
+                <button class="add-to-cart-btn" data-name="Maroorn Coord set" data-price="1107">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="White printed Coord set" data-price="1790"></i>
+            <h3>White printed Coord set</h3>
+            <div class="box-img" style="background-image: url('img_8.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1790</p>
+                <button class="add-to-cart-btn" data-name="White printed Coord set" data-price="1790">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Orange cutout dress" data-price="2688"></i>
+            <h3>Orange cutout dress</h3>
+            <div class="box-img" style="background-image: url('img_9.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.2688</p>
+                <button class="add-to-cart-btn" data-name="Orange cutout dress" data-price="2688">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Brown top" data-price="799"></i>
+            <h3>Brown top</h3>
+            <div class="box-img" style="background-image: url('img_10.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.799</p>
+                <button class="add-to-cart-btn" data-name="Brown top" data-price="799">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Velvet pants" data-price="1509"></i>
+            <h3>Velvet pants</h3>
+            <div class="box-img" style="background-image: url('img_11.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1509</p>
+                <button class="add-to-cart-btn" data-name="Velvet pants" data-price="1509">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <i class="fa-solid fa-heart wishlist-icon" data-name="Purple Dress" data-price="1109"></i>
+            <h3>Purple Dress</h3>
+            <div class="box-img" style="background-image: url('img_12.jpg');"></div>
+            <div class="product-footer">
+                <p class="price">Rs.1109</p>
+                <button class="add-to-cart-btn" data-name="Purple Dress" data-price="1109">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <ul>
+                <p><b>Online Shopping</b></p>
+                <a>Men</a>
+                <a>Women</a>
+                <a>Kids</a>
+            </ul>
+            <ul>
+                <p><b>Customer Policies</b></p>
+                <a>Contact us</a>
+                <a>FAQ</a>
+                <a>T&U</a>
+                <a>Terms of use</a>
+                <a>Track Orders</a>
+                <a>Shipping</a>
+                <a>Cancellation</a>
+                <a>Returns</a>
+                <a>Privacy Policy</a>
+            </ul>
+            <ul>
+                <p><b>Useful Links</b></p>
+                <a>Blog</a>
+                <a>Careers</a>
+                <a>Site Map</a>
+                <a>Cleartip</a>
+            </ul>
+        </div>
+    </footer>
+    <div id="cart-popup" class="cart-popup">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <br>
+        <button onclick="closeCart()">Close</button>
+    </div>
+    <div id="wishlist-popup" class="wishlist-popup">
+        <h3>Your Wishlist</h3>
+        <div id="wishlist-items"></div>
+        <br>
+        <button onclick="closeWishlist()">Close</button>
+    </div>
+    <div id="profile-popup" class="profile-popup">
+        <h3>Hello! Welcome to <strong>ShopZone</strong></h3>
+        <a href="#" class="login-link">LOGIN / SIGNUP</a>
+        <br>
+        <button onclick="closeProfile()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
